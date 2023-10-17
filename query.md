@@ -21,3 +21,5 @@ laurea (286)
 ## 5 - SELECT * FROM `exams` WHERE `hour` BETWEEN '14:00:00' AND '23:59:59' AND `date` = '2020-06-20';
 
 ## 6 - SELECT * FROM `degrees` WHERE `name` LIKE '%Magistrale%';
+
+## 7 - SELECT COUNT(`id`) AS 'total_departments' FROM `departments`;
