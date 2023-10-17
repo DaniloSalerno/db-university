@@ -23,3 +23,5 @@ laurea (286)
 ## 6 - SELECT * FROM `degrees` WHERE `name` LIKE '%Magistrale%';
 
 ## 7 - SELECT COUNT(`id`) AS 'total_departments' FROM `departments`;
+
+## 8 - SELECT COUNT(`id`) AS 'teacher_without_phone' FROM `teachers` WHERE `phone` IS NULL;
