@@ -44,5 +44,11 @@ GROUP BY `office_address`;
 SELECT AVG(`vote`) AS `avarage_vote`, `student_id` 
 FROM `exam_student` 
 GROUP BY `student_id`;
+```
 
+## Query n-4
+```sql
+SELECT COUNT(*) AS `courses_number`, `department_id` 
+FROM `degrees` 
+GROUP BY `department_id`;
 ```
