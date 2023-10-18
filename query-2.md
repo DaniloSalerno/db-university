@@ -84,7 +84,7 @@ SELECT `students`.*, `degrees`.`name` AS `degree_name`, `degrees`.`level` AS `de
 FROM `students` 
 JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` 
 JOIN `departments` ON `degrees`.`department_id` = `departments`.`id` 
-ORDER BY `students`.`surname`;
+ORDER BY `students`.`surname`, `students`.`name`;
 ```
 
 
