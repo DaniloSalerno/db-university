@@ -61,3 +61,11 @@ JOIN `degrees` ON `degrees`.`id` = `students`.`degree_id`
 WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
 ```
 
+## Query n-6
+```sql
+SELECT `degrees`.* , `departments`.`name` AS `department_name` 
+FROM `degrees` 
+JOIN `departments` ON `degrees`.`department_id` = `departments`.`id` 
+WHERE `degrees`.`name` LIKE 'Corso di Laurea Magistrale%' 
+AND `departments`.`name` = 'Dipartimento di Neuroscienze';
+```
