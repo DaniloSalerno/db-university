@@ -31,3 +31,10 @@ SELECT COUNT(*) AS `enrolment_year`, YEAR(`enrolment_date`) AS `year`
 FROM `students` 
 GROUP BY `year`;
 ```
+
+## Query n-2
+```sql
+SELECT COUNT(*) AS `teachers_number`, `office_address` 
+FROM `teachers` 
+GROUP BY `office_address`;
+```
