@@ -78,4 +78,13 @@ JOIN `course_teacher` ON `course_teacher`.`course_id` = `courses`.`id`
 WHERE `course_teacher`.`teacher_id` = 44;
 ```
 
+## Query n-8
+```sql
+SELECT `students`.*, `degrees`.`name` AS `degree_name`, `degrees`.`level` AS `degree_level`, `degrees`.`address` AS `degree_address`, `degrees`.`email` AS `degree_email`, `degrees`.`website` AS `degree_website`, `departments`.`name` AS `department_name`
+FROM `students` 
+JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` 
+JOIN `departments` ON `degrees`.`department_id` = `departments`.`id` 
+ORDER BY `students`.`surname`;
+```
+
 
