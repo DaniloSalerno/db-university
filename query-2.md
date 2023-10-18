@@ -38,3 +38,11 @@ SELECT COUNT(*) AS `teachers_number`, `office_address`
 FROM `teachers` 
 GROUP BY `office_address`;
 ```
+
+## Query n-3
+```sql
+SELECT AVG(`vote`) AS `avarage_vote`, `student_id` 
+FROM `exam_student` 
+GROUP BY `student_id`;
+
+```
