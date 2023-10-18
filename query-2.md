@@ -88,3 +88,12 @@ ORDER BY `students`.`surname`, `students`.`name`;
 ```
 
 
+## Query n-9
+```sql
+SELECT `degrees`.`id` AS `degree_id` ,`degrees`.`department_id` ,`degrees`.`name` AS `degree_name`, `degrees`.`level` AS `degree_level`, `degrees`.`address` AS `degree_address`, `degrees`.`email` AS `degree_email`, `degrees`.`website` AS `degree_website`, `courses`.`id` AS `course_id`, `courses`.`name` AS `course_name`, `courses`.`description` AS `course_description`, `courses`.`period` AS `course_period`, `courses`.`year` AS `course_year`, `courses`.`cfu` AS `course_cfu`, `courses`.`website` AS `website`, `teachers`.`id` AS `teacher_id`, `teachers`.`name` AS `teacher_name`, `teachers`.`surname` AS `teacher_surname`, `teachers`.`phone` AS `teacher_phone`, `teachers`.`email` AS `teacher_email`, `teachers`.`office_address` AS `teacher_office_address`, `teachers`.`office_number` AS `teacher_office_number`
+FROM `degrees` 
+JOIN `courses` ON `courses`.`degree_id` = `degrees`.`id` 
+JOIN `course_teacher` ON `course_teacher`.`course_id` = `courses`.`id`
+JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`;
+```
+
