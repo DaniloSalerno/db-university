@@ -52,3 +52,12 @@ SELECT COUNT(*) AS `courses_number`, `department_id`
 FROM `degrees` 
 GROUP BY `department_id`;
 ```
+
+## Query n-5
+```sql
+SELECT `students`.* , `degrees`.`name` AS `degree_name` 
+FROM `students` 
+JOIN `degrees` ON `degrees`.`id` = `students`.`degree_id` 
+WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
+```
+
